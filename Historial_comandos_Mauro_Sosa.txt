@@ -1,0 +1,53 @@
+ls
+cd repogit 
+ls
+git clone git@github.com:maurososa98/TP_AySO.git
+ls
+cd TP_AySO/
+ls -l
+cat /etc/os-release
+man grep
+grep -i HOME_URL /etc/os-release
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i Home_url /etc/os-release 
+whoami
+echo “Usuario=$(whoami)”
+echo “Usuario=$(whoami)” > datos_usuario.txt
+git add.
+git add .
+git commit -m "ADD: agregado 1er ejercicio
+sobre datos_usuarios.txt"
+git status
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add .
+git commit -m "feat: Añadiendo información de CPU"
+man grep
+man sort
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t":" -k7
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t":" -k7 >> datos_usuario.txt 
+cat datos_usuario.txt
+grep -v "nologin" /etc/passwd | head -n 10 | sort -t":" -k7 > lista_ordenada
+ls
+cat datos_usuario.txt
+cat lista_ordenada
+git add .
+git commit -m “ADD: Listado de usuarios ordenada”
+git commit -m "ADD: Listado de usuarios ordenada"
+man -k traffic | grep dump
+echo "tcpdump" > comando_dump_net
+echo "man -k traffic | grep dump" >> comando_dump_net
+cat comando_dump_net
+git add .
+git commit -m "ADD: Comando para Capturar y analizar el tráfico de red"
+cat <<FIN >> README.md
+Alumno: Mauro Sosa
+División: 115
+Turno: mañana
+FIN
+
+cat README.md
+git add .
+git commit -m "docs: agregar información del alumno y detalles de la división y turno"
+history -a
